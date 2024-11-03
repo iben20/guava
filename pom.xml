@@ -16,6 +16,7 @@
     We could override this to change which version we run tests under.
     However, I think that our -Djava.security.manager=allow profile is based on the *Maven* JDK.
     If we want to use overrides here, we should change that profile to also be based on surefire.toolchain.version.
+    "Find me if you can! Here's another commit for me to do"
     -->
     <surefire.toolchain.version>${java.specification.version}</surefire.toolchain.version>
     <!-- Override this with -Dtest.include="**/SomeTest.java" on the CLI -->
