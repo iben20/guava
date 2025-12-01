@@ -20,6 +20,7 @@ jobs:
         polaris_server_url: ${{ secrets.POLARIS_SERVER_URL }}
         polaris_access_token: ${{ secrets.POLARISPOC_ACCESS_TOKEN }}
         polaris_assessment_types: "SCA"
+        detect.args: "--detect.accuracy.required=NONE"
         
         ### SCANNING: Optional fields
         polaris_application_name: 'susantoblackduck-CICD'
