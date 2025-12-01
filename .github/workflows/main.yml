@@ -21,6 +21,8 @@ jobs:
         polaris_access_token: ${{ secrets.POLARISPOC_ACCESS_TOKEN }}
         polaris_assessment_types: "SCA,SAST"
         detect_args: "--detect.accuracy.required=NONE"
+        coverity_build_command: "./mvnw install -DskipTests"
+        coverity_clean_command: "./mvnw clean"
         
         ### SCANNING: Optional fields
         polaris_application_name: 'susantoblackduck-CICD'
