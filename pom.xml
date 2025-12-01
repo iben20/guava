@@ -411,11 +411,6 @@
         <version>${jsr305.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>2.14.1</version>
-      </dependency>
-      <dependency>
         <groupId>org.checkerframework</groupId>
         <artifactId>checker-qual</artifactId>
         <version>${checker.version}</version>
@@ -437,6 +432,11 @@
       -->
     </dependencies>
   </dependencyManagement>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.14.1</version>
+  </dependency>
   <profiles>
     <profile>
         <id>sonatype-oss-release</id>
